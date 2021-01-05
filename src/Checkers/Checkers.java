@@ -5,19 +5,18 @@ import javax.swing.JFrame;
 
 public class Checkers extends JFrame{
     public Checkers() {
-
         initUI();
     }
 
     private void initUI() {
 
+//      creates board
         add(new Board());
-
-        setSize(250, 200);
-
+        setSize(640, 640);
         setTitle("Checkers");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
+
     }
 
     public static void main(String[] args) {
